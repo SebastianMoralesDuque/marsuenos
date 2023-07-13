@@ -1,14 +1,14 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import AppRoutes from './components/AppRoutes';
 import Footer from './components/Footer';
 
 
 const App: React.FC = () => {
   return (
     <div>
-      <Navbar />
+      <AppRoutes />
       <div className="container mx-auto">
-        <h1 className="text-4xl font-bold mt-8">Contenido de la página</h1>
+        <h1 className="text-4xl font-bold mt-24">Contenido de la página</h1>
       </div>
       <Footer />
       
