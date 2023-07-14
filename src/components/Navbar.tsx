@@ -53,10 +53,7 @@ const Navbar = () => {
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white rounded-lg p-8">
-            <Login />
-            <button className="bg-blue-700 text-white py-2 px-4 mt-4 rounded-lg" onClick={closeModal}>
-              Cerrar
-            </button>
+            <Login closeModal={closeModal} />
           </div>
         </div>
       )}
