@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="fixed bottom-0 left-0 w-full bg-[#010566] text-white py-8">
+    <footer className="w-full bg-[#010566] text-white py-8">
       {/* Contenedor principal */}
       <div className="container mx-auto flex flex-wrap justify-between space-y-8 md:space-y-0 md:flex-row md:space-x-8">
         <div className="w-full sm:w-1/2 lg:w-auto">
@@ -88,8 +88,8 @@ const Footer: React.FC = () => {
         </div>
       </div>
       {/* Contenedor inferior */}
-      <div className="container mx-auto">
-        <p className="text-pink-500 text-center mt-8">© Mar Dreams {new Date().getFullYear()}
+      <div className="container mx-auto mt-auto">
+        <p className="text-pink-500 text-center">© Mar Dreams {new Date().getFullYear()}
           All rights reserved. Privacy Policy | Terms of Use</p>
       </div>
     </footer>
