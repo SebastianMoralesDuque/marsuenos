@@ -30,8 +30,7 @@ const Contact: React.FC = () => {
 
   return (
     <div>
-      <h1 className="text-4xl font-bold mt-24">Contáctenos</h1>
-      <section className="text-gray-600 body-font relative">
+      <h1 className="text-4xl font-bold mt-24 text-center mb-6">Contáctenos</h1>      <section className="text-gray-600 body-font relative">
         <div className="absolute inset-0 bg-gray-300">
           <iframe
             width="100%"
