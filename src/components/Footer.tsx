@@ -23,38 +23,38 @@ const Footer: React.FC = () => {
         <div className="w-full sm:w-1/2 lg:w-auto">
           {/* Columna de Contacto */}
           <div className="footer-column">
-            <h3 className="text-2xl text-pink-500 mb-4">Contact</h3>
+            <h3 className="text-2xl text-pink-500 mb-4">Contáctenos</h3>
             <p>
               <FaPhone className="inline-block mr-2" /> Phone: +123456789
             </p>
             <p>
               <FaEnvelope className="inline-block mr-2" /> Email:
-              info@travelagency.com
+              ventas@marsuenosviajes.com
             </p>
             <p>
-              <FaMapMarkerAlt className="inline-block mr-2" /> Address: Main
-              Street, City
+              <FaMapMarkerAlt className="inline-block mr-2" /> Oficina: Carrera 15A #23 Norte - 50, Armenia - QuindÃ­o - Colombia
             </p>
           </div>
         </div>
         <div className="w-full sm:w-1/2 lg:w-auto">
           {/* Columna de Enlaces Útiles */}
           <div className="footer-column">
-            <h3 className="text-2xl text-pink-500 mb-4">Useful Links</h3>
+            <h3 className="text-2xl text-pink-500 mb-4">Links</h3>
             <ul>
-              <li><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Home</a></li>
-              <li><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Destinations</a></li>
-              <li><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Packages</a></li>
-              <li><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Promotions</a></li>
-              <li><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Contact</a></li>
+              <li><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Inicio</a></li>
+              <li><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Destinos</a></li>
+              <li><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Paquetes</a></li>
+              <li><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Promociones</a></li>
+              <li><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Contacto</a></li>
+              <li><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Visas</a></li>
             </ul>
           </div>
         </div>
         <div className="w-full sm:w-1/2 lg:w-auto">
           {/* Columna de Suscripción */}
           <div className="footer-column">
-            <h3 className="text-2xl text-pink-500 mb-4">Subscribe</h3>
-            <p>Receive our latest offers by email:</p>
+            <h3 className="text-2xl text-pink-500 mb-4">Boletín</h3>
+            <p>Dejanos tu correo para que compartamos experiencias de vacaciones y viajes:</p>
             <div className="flex mt-2">
               <input
                 type="email"
@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
         <div className="w-full sm:w-1/2 lg:w-auto">
           {/* Columna de Redes Sociales */}
           <div className="footer-column">
-            <h3 className="text-2xl text-pink-500 mb-4">Follow Us</h3>
+            <h3 className="text-2xl text-pink-500 mb-4">Siguenos!</h3>
             <div className="flex items-center space-x-4">
               <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300"><FaFacebook size={30} /></a>
               <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300"><FaTwitter size={30} /></a>
