@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaYoutube, FaTripadvisor, FaArrowRight } from 'react-icons/fa';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { IoIosAirplane } from 'react-icons/io';
 
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="w-full bg-[#010566] text-white py-8">
+    <footer className="w-full bg-[#172554] text-white py-8">
       {/* Contenedor principal */}
       <div className="container mx-auto flex flex-wrap justify-between space-y-8 md:space-y-0 md:flex-row md:space-x-8">
         <div className="w-full sm:w-1/2 lg:w-auto">
@@ -25,14 +25,14 @@ const Footer: React.FC = () => {
           <div className="footer-column">
             <h3 className="text-2xl text-pink-500 mb-4">Contáctenos</h3>
             <p>
-              <FaPhone className="inline-block mr-2" /> Phone: +123456789
+              <FaPhone className="inline-block mr-2" /> 123456789
             </p>
             <p>
-              <FaEnvelope className="inline-block mr-2" /> Email:
+              <FaEnvelope className="inline-block mr-2" />
               ventas@marsuenosviajes.com
             </p>
             <p>
-              <FaMapMarkerAlt className="inline-block mr-2" /> Oficina: Carrera 15A #23 Norte - 50, Armenia - QuindÃ­o - Colombia
+              <FaMapMarkerAlt className="inline-block mr-2" /> Carrera 15A #23 Norte - 50, Armenia - Quindio - Colombia
             </p>
           </div>
         </div>
@@ -41,12 +41,12 @@ const Footer: React.FC = () => {
           <div className="footer-column">
             <h3 className="text-2xl text-pink-500 mb-4">Links</h3>
             <ul>
-              <li><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Inicio</a></li>
-              <li><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Destinos</a></li>
-              <li><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Paquetes</a></li>
-              <li><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Promociones</a></li>
-              <li><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Contacto</a></li>
-              <li><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Visas</a></li>
+              <li><FaArrowRight className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Inicio</a></li>
+              <li><FaArrowRight className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Destinos</a></li>
+              <li><FaArrowRight className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Paquetes</a></li>
+              <li><FaArrowRight className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Promociones</a></li>
+              <li><FaArrowRight className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Contacto</a></li>
+              <li><FaArrowRight className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Visas</a></li>
             </ul>
           </div>
         </div>
@@ -54,8 +54,9 @@ const Footer: React.FC = () => {
           {/* Columna de Suscripción */}
           <div className="footer-column">
             <h3 className="text-2xl text-pink-500 mb-4">Boletín</h3>
-            <p>Dejanos tu correo para que compartamos experiencias de vacaciones y viajes:</p>
-            <div className="flex mt-2">
+            <p>Dejanos tu correo para que compartamos experiencias<br></br>
+              de vacaciones y viajes:</p>
+            <div className="flex mt-2 text-pink-500">
               <input
                 type="email"
                 value={email}
@@ -67,7 +68,7 @@ const Footer: React.FC = () => {
                 onClick={handleSubscribe}
                 className="bg-pink-500 hover:bg-pink-600 text-white rounded px-4 py-2"
               >
-                Subscribe
+                ENVIAR
               </button>
             </div>
           </div>
@@ -79,7 +80,9 @@ const Footer: React.FC = () => {
             <div className="flex items-center space-x-4">
               <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300"><FaFacebook size={30} /></a>
               <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300"><FaTwitter size={30} /></a>
+              <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300"><FaYoutube size={30} /></a>
               <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300"><FaInstagram size={30} /></a>
+              <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300"><FaTripadvisor size={30} /></a>
             </div>
             <div className="flex items-center mt-4">
               <IoIosAirplane className="text-pink-500 text-7xl" />
@@ -89,8 +92,9 @@ const Footer: React.FC = () => {
       </div>
       {/* Contenedor inferior */}
       <div className="container mx-auto mt-auto">
-        <p className="text-pink-500 text-center">© Mar Dreams {new Date().getFullYear()}
-          All rights reserved. Privacy Policy | Terms of Use</p>
+        <p className="text-pink-500 text-center">© Copyrights Mar Sueños  {new Date().getFullYear()}.
+          Todos los derechos reservados. Politicas de Privacidad | Terminos de Uso
+        </p>
       </div>
     </footer>
   );
