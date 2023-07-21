@@ -91,9 +91,9 @@ const Footer: React.FC = () => {
         </div>
       </div>
       {/* Contenedor inferior */}
-      <div className="container mx-auto mt-auto">
-        <p className="text-pink-500 text-center">© Copyrights Mar Sueños  {new Date().getFullYear()}.
-          Todos los derechos reservados. Politicas de Privacidad | Terminos de Uso
+      <div className="container mx-auto mt-auto mt-5">
+        <p className="text-pink-500 text-center">© Copyrights <span className="text-white">Mar Sueños</span> {new Date().getFullYear()}.
+          Todos los derechos reservados. <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Politicas de Privacidad</a> | <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Terminos de Uso</a>
         </p>
       </div>
     </footer>
