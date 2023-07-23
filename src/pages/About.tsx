@@ -26,14 +26,14 @@ const ContactForm = () => {
         />
       </section>
 
-       {/* Sección "Quienes Somos" */}
-       <section className="container mx-auto mt-8 bg-gray-100 py-8">
+      {/* Sección "Quienes Somos" */}
+      <section className="container mx-auto mt-8 bg-gray-100 py-8">
         <h2 className="text-3xl font-bold mb-8 text-center bg-blue-500 py-6 px-4 rounded-lg text-white">
           Quienes Somos?
         </h2>
         <h3 className="text-2xl text-yellow-600 py-4">Marsueños</h3>
         <p className="text-gray-800 text-sm mt-4">
-           Es una agencia de viajes especializada en asesorías personalizadas, ofreciendo a nuestros clientes una experiencia diferente en la compra de viajes, excursiones, cruceros y tiquetes aéreos brindándoles comodidad y exclusividad, encargándonos de los requerimientos de quienes estén interesados en adquirir los productos, mostrando gran variedad de posibilidades para sus viajes de negocios o vacaciones.
+          Es una agencia de viajes especializada en asesorías personalizadas, ofreciendo a nuestros clientes una experiencia diferente en la compra de viajes, excursiones, cruceros y tiquetes aéreos brindándoles comodidad y exclusividad, encargándonos de los requerimientos de quienes estén interesados en adquirir los productos, mostrando gran variedad de posibilidades para sus viajes de negocios o vacaciones.
         </p>
         <p className="text-gray-800 mt-4 text-sm mt-4">
           Nuestro equipo de trabajo está en la capacidad de desplazarse hasta el lugar donde el cliente lo necesite puede ser el apartamento, casa, finca u oficina, nuestra intención es proporcionar un ambiente confortable y familiar para tomar la mejor decisión en el momento de elegir su destino de viaje.
@@ -46,7 +46,7 @@ const ContactForm = () => {
         </p>
         <h4 className="text-2xl text-yellow-600 pt-4">Historia</h4>
         <p className="text-gray-800 mt-4 text-sm ">
-          
+
           MARSUEÑOS VIAJES Y TURISMO Nació a mediados del año 2013 gracias al emprendimiento de una joven pareja Quindiana (MARCELA ARIAS _ MAURICIO GOMEZ). Estos esposos obedeciendo a su empuje y tenacidad decidieron dar rienda suelta a su osadía y encarar un reto como es la creación de empresa. Siendo conscientes de los contratiempos contando principalmente con el apoyo de la familia y la convicción de tener todo lo necesario para este proyecto combinado con la experiencia de cada uno de ellos decidieron dar ese gran paso.
         </p>
         <p className="text-gray-800 mt-4 text-sm">
@@ -57,7 +57,7 @@ const ContactForm = () => {
         </p>
         <h4 className="text-2xl text-blue-600 pt-4">Mision</h4>
         <p className="text-gray-800 mt-4 text-sm">
-        
+
           Marsueños es una agencia de viajes enfocada en prestar un excelente servicio a nivel interno y externo a través de asesorías personalizadas y especializadas que cumplan las expectativas del cliente generando confianza, seguridad y comodidad, manejando un clima organizacional que garantice el buen funcionamiento de la empresa a través de personal idóneo y capacitado.
         </p>
         <h4 className="text-2xl text-blue-600 pt-4">Vision</h4>
@@ -66,7 +66,7 @@ const ContactForm = () => {
         </p>
         <h4 className="text-2xl text-red-600 pt-4"> Política de sostenibilidad</h4>
         <p className="text-gray-800 mt-4 text-sm">
-    
+
           Marsueños Viajes y Turismo S.A.S. es una agencia de viajes enfocada en la satisfacción del cliente interno y externo, nuestro trabajo está direccionado a ofrecer un servicio personalizado, competitivo y oportuno; todo bajo el cumplimiento de los requisitos legales y la búsqueda de la mejora continua de la organización.
         </p>
         <p className="text-gray-800 mt-4 text-sm">
@@ -75,20 +75,20 @@ const ContactForm = () => {
       </section>
 
 
-        <h2 className='text-3xl pt-10'>Equipo MARSUEÑOS Viajes y Turismo</h2>
-        {/* Sección de Imágenes */}
-        <div className="flex flex-wrap justify-center mt-8">
-          {/* Renderizar las 10 imágenes */}
-          {Array.from({ length: 3 }).map((_, index) => (
-            <div key={index} className="m-2">
-              <img
-                src={`https://www.marsuenosviajes.com/files/galerias/m420170818112322.jpeg`} // Reemplaza con la ruta de tus imágenes
-                alt={`Imagen ${index + 1}`}
-                className="w-300 h-300"
-              />
-            </div>
-          ))}
-        </div>
+      <h2 className='text-3xl pt-10'>Equipo MARSUEÑOS Viajes y Turismo</h2>
+      {/* Sección de Imágenes */}
+      <div className="flex flex-wrap justify-center mt-8">
+        {/* Renderizar las 10 imágenes */}
+        {Array.from({ length: 3 }).map((_, index) => (
+          <div key={index} className="m-2">
+            <img
+              src={`https://www.marsuenosviajes.com/files/galerias/m420170818112322.jpeg`} // Reemplaza con la ruta de tus imágenes
+              alt={`Imagen ${index + 1}`}
+              className="w-300 h-300"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
