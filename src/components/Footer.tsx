@@ -24,14 +24,14 @@ const Footer: React.FC = () => {
           {/* Columna de Contacto */}
           <div className="footer-column">
             <h3 className="text-2xl text-pink-500 mb-4">Contáctenos</h3>
-            <p>
-              <FaPhone className="inline-block mr-2" /> 123456789
+            <p className="pb-2">
+              <FaPhone className="inline-block mr-2 " /> 123456789
             </p>
-            <p>
+            <p className="pb-2">
               <FaEnvelope className="inline-block mr-2" />
               ventas@marsuenosviajes.com
             </p>
-            <p>
+            <p className="pb-2">
               <FaMapMarkerAlt className="inline-block mr-2" /> Carrera 15A #23 Norte - 50, Armenia - Quindio - Colombia
             </p>
           </div>
@@ -91,7 +91,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       {/* Contenedor inferior */}
-      <div className="container mx-auto mt-auto mt-5">
+      <div className="container mx-auto mt-auto mt-5 pt-6">
         <p className="text-pink-500 text-center">© Copyrights <span className="text-white">Mar Sueños</span> {new Date().getFullYear()}.
           Todos los derechos reservados. <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Politicas de Privacidad</a> | <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Terminos de Uso</a>
         </p>

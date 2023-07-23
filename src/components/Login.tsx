@@ -69,7 +69,7 @@ const Login: React.FC<LoginProps> = ({ closeModal }) => {
     >
       {showLoginForm ? (
         <>
-          <h2 className="text-xl font-bold mb-4 text-center">Iniciar Sesión</h2>
+          <h2 className="text-pink-500 text-3xl  text-center pb-10 ">Iniciar Sesión</h2>
           <form onSubmit={handleSubmit}>
             {/* Formulario de inicio de sesión */}
             <div className="mb-4">
