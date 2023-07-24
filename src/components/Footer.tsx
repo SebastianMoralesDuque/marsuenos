@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="w-full bg-blue text-white py-8 bg-gradient-to-r from-red-400 from-10% via-sky-500 via-30% to-blue-200 to-90%">
+    <footer className="w-full bg-blue text-white py-8 bg-gradient-to-r from-red-400 from-10% via-sky-400 via-30% to-blue-400 to-90%">
       {/* Contenedor principal */}
       <div className="container mx-auto flex flex-wrap justify-between space-y-8 md:space-y-0 md:flex-row md:space-x-8">
         <div className="w-full sm:w-1/2 lg:w-auto">
@@ -41,12 +41,12 @@ const Footer: React.FC = () => {
           <div className="footer-column ">
             <h3 className="text-2xl text-black mb-4">Links</h3>
             <ul>
-              <li><IoIosAirplane className="inline-block mr-2 " /><a href="#" className="text-white hover:text-red-500 transition-colors duration-300">Inicio</a></li>
-              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-blue-500 transition-colors duration-300">Destinos</a></li>
-              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-red-500 transition-colors duration-300">Paquetes</a></li>
-              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-blue-600 transition-colors duration-300">Promociones</a></li>
-              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-red-500 transition-colors duration-300">Contacto</a></li>
-              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-blue-600 transition-colors duration-300">Visas</a></li>
+              <li><IoIosAirplane className="inline-block mr-2 " /><a href="#" className="text-white hover:text-red-700 transition-colors duration-300">Inicio</a></li>
+              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-blue-800 transition-colors duration-300">Destinos</a></li>
+              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-red-700 transition-colors duration-300">Paquetes</a></li>
+              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-blue-800 transition-colors duration-300">Promociones</a></li>
+              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-red-700 transition-colors duration-300">Contacto</a></li>
+              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-blue-800 transition-colors duration-300">Visas</a></li>
             </ul>
           </div>
         </div>
