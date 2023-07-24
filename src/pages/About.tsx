@@ -17,7 +17,7 @@ const ContactForm = () => {
   return (
     <div>
       {/* Sección de Imagen */}
-      <section className="h-screen-80 bg-gray-200 flex items-center justify-center pt-20">
+      <section className="h-screen-80 bg-gray-200 flex items-center justify-center pt-20 ">
         {/* Mostrar la imagen actual */}
         <img
           src={images[currentImageIndex]}
@@ -31,7 +31,7 @@ const ContactForm = () => {
         <h2 className="text-3xl font-bold mb-8 text-center bg-blue-500 py-6 px-4 rounded-lg text-white">
           Quienes Somos?
         </h2>
-        <h3 className="text-2xl text-yellow-600 py-4">Marsueños</h3>
+        <h3 className="text-2xl text-yellow-600 py-4 ">Marsueños</h3>
         <p className="text-gray-800 text-sm mt-4">
           Es una agencia de viajes especializada en asesorías personalizadas, ofreciendo a nuestros clientes una experiencia diferente en la compra de viajes, excursiones, cruceros y tiquetes aéreos brindándoles comodidad y exclusividad, encargándonos de los requerimientos de quienes estén interesados en adquirir los productos, mostrando gran variedad de posibilidades para sus viajes de negocios o vacaciones.
         </p>
