@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaYoutube, FaTripadvisor, FaArrowRight } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaYoutube, FaTripadvisor } from 'react-icons/fa';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { IoIosAirplane } from 'react-icons/io';
 
@@ -36,17 +36,17 @@ const Footer: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="w-full sm:w-1/2 lg:w-auto">
+        <div className="w-full sm:w-1/2 lg:w-auto ">
           {/* Columna de Enlaces Útiles */}
-          <div className="footer-column">
+          <div className="footer-column ">
             <h3 className="text-2xl text-pink-500 mb-4">Links</h3>
             <ul>
-              <li><FaArrowRight className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Inicio</a></li>
-              <li><FaArrowRight className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Destinos</a></li>
-              <li><FaArrowRight className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Paquetes</a></li>
-              <li><FaArrowRight className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Promociones</a></li>
-              <li><FaArrowRight className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Contacto</a></li>
-              <li><FaArrowRight className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Visas</a></li>
+              <li><IoIosAirplane className="inline-block mr-2 " /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Inicio</a></li>
+              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Destinos</a></li>
+              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Paquetes</a></li>
+              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Promociones</a></li>
+              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Contacto</a></li>
+              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Visas</a></li>
             </ul>
           </div>
         </div>
@@ -78,11 +78,11 @@ const Footer: React.FC = () => {
           <div className="footer-column">
             <h3 className="text-2xl text-pink-500 mb-4">Siguenos!</h3>
             <div className="flex items-center space-x-4">
-              <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300"><FaFacebook size={30} /></a>
-              <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300"><FaTwitter size={30} /></a>
-              <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300"><FaYoutube size={30} /></a>
-              <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300"><FaInstagram size={30} /></a>
-              <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300"><FaTripadvisor size={30} /></a>
+              <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300 animate-bounce " ><FaFacebook size={30} /></a>
+              <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300 animate-bounce"><FaTwitter size={30} /></a>
+              <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300 animate-bounce"><FaYoutube size={30} /></a>
+              <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300 animate-bounce"><FaInstagram size={30} /></a>
+              <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300 animate-bounce"><FaTripadvisor size={30} /></a>
             </div>
             <div className="flex items-center mt-4">
               <IoIosAirplane className="text-pink-500 text-7xl" />
@@ -101,3 +101,5 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
+
+
