@@ -17,13 +17,13 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="w-full bg-[#172554] text-white py-8 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+    <footer className="w-full bg-blue text-white py-8 bg-gradient-to-r from-red-400 from-10% via-sky-500 via-30% to-blue-200 to-90%">
       {/* Contenedor principal */}
       <div className="container mx-auto flex flex-wrap justify-between space-y-8 md:space-y-0 md:flex-row md:space-x-8">
         <div className="w-full sm:w-1/2 lg:w-auto">
           {/* Columna de Contacto */}
           <div className="footer-column">
-            <h3 className="text-2xl text-pink-500 mb-4">Contáctenos</h3>
+            <h3 className="text-2xl text-black mb-4">Contáctenos</h3>
             <p className="pb-2">
               <FaPhone className="inline-block mr-2 " /> 123456789
             </p>
@@ -39,24 +39,24 @@ const Footer: React.FC = () => {
         <div className="w-full sm:w-1/2 lg:w-auto ">
           {/* Columna de Enlaces Útiles */}
           <div className="footer-column ">
-            <h3 className="text-2xl text-pink-500 mb-4">Links</h3>
+            <h3 className="text-2xl text-black mb-4">Links</h3>
             <ul>
-              <li><IoIosAirplane className="inline-block mr-2 " /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Inicio</a></li>
-              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Destinos</a></li>
-              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Paquetes</a></li>
-              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Promociones</a></li>
-              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Contacto</a></li>
-              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Visas</a></li>
+              <li><IoIosAirplane className="inline-block mr-2 " /><a href="#" className="text-white hover:text-red-500 transition-colors duration-300">Inicio</a></li>
+              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-blue-500 transition-colors duration-300">Destinos</a></li>
+              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-red-500 transition-colors duration-300">Paquetes</a></li>
+              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-blue-600 transition-colors duration-300">Promociones</a></li>
+              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-red-500 transition-colors duration-300">Contacto</a></li>
+              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-blue-600 transition-colors duration-300">Visas</a></li>
             </ul>
           </div>
         </div>
         <div className="w-full sm:w-1/2 lg:w-auto">
           {/* Columna de Suscripción */}
           <div className="footer-column">
-            <h3 className="text-2xl text-pink-500 mb-4">Boletín</h3>
+            <h3 className="text-2xl text-black mb-4">Boletín</h3>
             <p>Dejanos tu correo para que compartamos experiencias<br></br>
               de vacaciones y viajes:</p>
-            <div className="flex mt-2 text-pink-500">
+            <div className="flex mt-2 text-red-500">
               <input
                 type="email"
                 value={email}
@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
               />
               <button
                 onClick={handleSubscribe}
-                className="bg-pink-600 hover:bg-pink-700 text-white rounded px-4 py-2 bg-pink-500 shadow-lg shadow-pink-500/50"
+                className="bg-red-600 hover:bg-red-700 text-white rounded px-4 py-2 bg-red-500 shadow-lg shadow-red-500/50"
               >
                 ENVIAR
               </button>
@@ -76,21 +76,21 @@ const Footer: React.FC = () => {
         <div className="w-full sm:w-1/2 lg:w-auto">
           {/* Columna de Redes Sociales */}
           <div className="footer-column">
-            <h3 className="text-2xl text-pink-500 mb-4">Siguenos!</h3>
+            <h3 className="text-2xl text-black mb-4">Siguenos!</h3>
             <div className="flex items-center space-x-4">
-              <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300 animate-bounce " ><FaFacebook size={30} /></a>
-              <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300 animate-bounce"><FaTwitter size={30} /></a>
-              <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300 animate-bounce"><FaYoutube size={30} /></a>
-              <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300 animate-bounce"><FaInstagram size={30} /></a>
-              <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300 animate-bounce"><FaTripadvisor size={30} /></a>
+              <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 animate-bounce " ><FaFacebook size={30} /></a>
+              <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 animate-bounce"><FaTwitter size={30} /></a>
+              <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 animate-bounce"><FaYoutube size={30} /></a>
+              <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 animate-bounce"><FaInstagram size={30} /></a>
+              <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 animate-bounce"><FaTripadvisor size={30} /></a>
             </div>
           </div>
         </div>
       </div>
       {/* Contenedor inferior */}
       <div className="container mx-auto mt-auto mt-5 pt-6">
-        <p className="text-pink-500 text-center">© Copyrights <span className="text-white">Mar Sueños</span> {new Date().getFullYear()}.
-          Todos los derechos reservados. <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300 underline">Politicas de Privacidad</a> | <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300 underline">Terminos de Uso</a>
+        <p className="text-red-500 text-center">© Copyrights <span className="text-white">Mar Sueños</span> {new Date().getFullYear()}.
+          Todos los derechos reservados. <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 underline">Politicas de Privacidad</a> | <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 underline">Terminos de Uso</a>
         </p>
       </div>
     </footer>
