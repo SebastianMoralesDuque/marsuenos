@@ -26,11 +26,49 @@ const ContactForm = () => {
         />
       </section>
 
+
+
+
+
       {/* Sección "Quienes Somos" */}
-      <section className="container mx-auto mt-8 bg-gray-100 py-8">
-        <h2 className="text-3xl font-bold mb-8 text-center bg-blue-500 py-6 px-4 rounded-lg text-white">
+
+
+
+
+
+
+
+
+
+
+
+      <section className="container mx-auto mt-8 bg-gray-100 py-8 ">
+        <h2 className="font-sans text-3xl italic hover:not-italic text-white bg-gradient-to-r from-cyan-800 to-sky-400 border-2 rounded-md border-rose-300 border-none hover:border-solid">
           Quienes Somos?
         </h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <h3 className="text-2xl text-yellow-600 py-4 ">Marsueños</h3>
         <p className="text-gray-800 text-sm mt-4">
           Es una agencia de viajes especializada en asesorías personalizadas, ofreciendo a nuestros clientes una experiencia diferente en la compra de viajes, excursiones, cruceros y tiquetes aéreos brindándoles comodidad y exclusividad, encargándonos de los requerimientos de quienes estén interesados en adquirir los productos, mostrando gran variedad de posibilidades para sus viajes de negocios o vacaciones.

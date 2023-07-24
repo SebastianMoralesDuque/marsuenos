@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="w-full bg-[#172554] text-white py-8">
+    <footer className="w-full bg-[#172554] text-white py-8 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
       {/* Contenedor principal */}
       <div className="container mx-auto flex flex-wrap justify-between space-y-8 md:space-y-0 md:flex-row md:space-x-8">
         <div className="w-full sm:w-1/2 lg:w-auto">
@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
               />
               <button
                 onClick={handleSubscribe}
-                className="bg-pink-500 hover:bg-pink-600 text-white rounded px-4 py-2"
+                className="bg-pink-600 hover:bg-pink-700 text-white rounded px-4 py-2 bg-pink-500 shadow-lg shadow-pink-500/50"
               >
                 ENVIAR
               </button>
@@ -84,16 +84,13 @@ const Footer: React.FC = () => {
               <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300 animate-bounce"><FaInstagram size={30} /></a>
               <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300 animate-bounce"><FaTripadvisor size={30} /></a>
             </div>
-            <div className="flex items-center mt-4">
-              <IoIosAirplane className="text-pink-500 text-7xl" />
-            </div>
           </div>
         </div>
       </div>
       {/* Contenedor inferior */}
       <div className="container mx-auto mt-auto mt-5 pt-6">
         <p className="text-pink-500 text-center">© Copyrights <span className="text-white">Mar Sueños</span> {new Date().getFullYear()}.
-          Todos los derechos reservados. <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Politicas de Privacidad</a> | <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300">Terminos de Uso</a>
+          Todos los derechos reservados. <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300 underline">Politicas de Privacidad</a> | <a href="#" className="text-white hover:text-pink-500 transition-colors duration-300 underline">Terminos de Uso</a>
         </p>
       </div>
     </footer>
