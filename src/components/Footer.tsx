@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="w-full bg-blue text-white py-8 bg-gradient-to-r from-red-400 from-10% via-sky-400 via-30% to-blue-400 to-90%">
+    <footer className="w-full bg-blue-800 text-white py-8 bg-gradient-to-r from-red-700 from-10% via-#blue-700 via-30% to-blue-800 to-90%">
       {/* Contenedor principal */}
       <div className="container mx-auto flex flex-wrap justify-between space-y-8 md:space-y-0 md:flex-row md:space-x-8">
         <div className="w-full sm:w-1/2 lg:w-auto">
@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
           <div className="footer-column">
             <h3 className="text-2xl text-black mb-4">Siguenos!</h3>
             <div className="flex items-center space-x-4">
-              <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 animate-bounce " ><FaFacebook size={30} /></a>
+              <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 animate-bounce" ><FaFacebook size={30} /></a>
               <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 animate-bounce"><FaTwitter size={30} /></a>
               <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 animate-bounce"><FaYoutube size={30} /></a>
               <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 animate-bounce"><FaInstagram size={30} /></a>
