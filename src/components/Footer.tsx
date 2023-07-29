@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="w-full bg-blue-800 text-white py-8 bg-gradient-to-r from-red-700 from-10% via-#blue-700 via-30% to-blue-800 to-90%">
+    <footer className="w-full bg-white text-red-700 py-8  ">
       {/* Contenedor principal */}
       <div className="container mx-auto flex flex-wrap justify-between space-y-8 md:space-y-0 md:flex-row md:space-x-8">
         <div className="w-full sm:w-1/2 lg:w-auto">
@@ -25,14 +25,14 @@ const Footer: React.FC = () => {
           <div className="footer-column">
             <h3 className="text-2xl text-black mb-4">Contáctenos</h3>
             <p className="pb-2">
-              <FaPhone className="inline-block mr-2 " /> 123456789
+              <FaPhone className="inline-block mr-2 text-blue-700" /> 123456789
             </p>
             <p className="pb-2">
-              <FaEnvelope className="inline-block mr-2" />
+              <FaEnvelope className="inline-block mr-2 text-blue-700" />
               ventas@marsuenosviajes.com
             </p>
             <p className="pb-2">
-              <FaMapMarkerAlt className="inline-block mr-2" /> Carrera 15A #23 Norte - 50, Armenia - Quindio - Colombia
+              <FaMapMarkerAlt className="inline-block mr-2 text-blue-700" /> Carrera 15A #23 Norte - 50, Armenia - Quindio - Colombia
             </p>
           </div>
         </div>
@@ -41,12 +41,12 @@ const Footer: React.FC = () => {
           <div className="footer-column ">
             <h3 className="text-2xl text-black mb-4">Links</h3>
             <ul>
-              <li><IoIosAirplane className="inline-block mr-2 " /><a href="#" className="text-white hover:text-red-700 transition-colors duration-300">Inicio</a></li>
-              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-blue-800 transition-colors duration-300">Destinos</a></li>
-              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-red-700 transition-colors duration-300">Paquetes</a></li>
-              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-blue-800 transition-colors duration-300">Promociones</a></li>
-              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-red-700 transition-colors duration-300">Contacto</a></li>
-              <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="text-white hover:text-blue-800 transition-colors duration-300">Visas</a></li>
+              <li><IoIosAirplane className="inline-block mr-2 text-blue-700 " /><a href="#" className="text-red-700 hover:text-blue-700 transition-colors duration-300">Inicio</a></li>
+              <li><IoIosAirplane className="inline-block mr-2 text-blue-700" /><a href="#" className="text-red-700 hover:text-blue-800 transition-colors duration-300">Destinos</a></li>
+              <li><IoIosAirplane className="inline-block mr-2 text-blue-700" /><a href="#" className="text-red-700 hover:text-blue-700 transition-colors duration-300">Paquetes</a></li>
+              <li><IoIosAirplane className="inline-block mr-2 text-blue-700" /><a href="#" className="text-red-700 hover:text-blue-800 transition-colors duration-300">Promociones</a></li>
+              <li><IoIosAirplane className="inline-block mr-2 text-blue-700" /><a href="#" className="text-red-700 hover:text-blue-700 transition-colors duration-300">Contacto</a></li>
+              <li><IoIosAirplane className="inline-block mr-2 text-blue-700" /><a href="#" className="text-red-700 hover:text-blue-800 transition-colors duration-300">Visas</a></li>
             </ul>
           </div>
         </div>
@@ -78,20 +78,35 @@ const Footer: React.FC = () => {
           <div className="footer-column">
             <h3 className="text-2xl text-black mb-4">Siguenos!</h3>
             <div className="flex items-center space-x-4">
-              <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 animate-bounce" ><FaFacebook size={30} /></a>
-              <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 animate-bounce"><FaTwitter size={30} /></a>
-              <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 animate-bounce"><FaYoutube size={30} /></a>
-              <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 animate-bounce"><FaInstagram size={30} /></a>
-              <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 animate-bounce"><FaTripadvisor size={30} /></a>
+              <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce" ><FaFacebook size={30} /></a>
+              <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaTwitter size={30} /></a>
+              <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaYoutube size={30} /></a>
+              <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaInstagram size={30} /></a>
+              <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaTripadvisor size={30} /></a>
             </div>
           </div>
         </div>
       </div>
       {/* Contenedor inferior */}
       <div className="container mx-auto mt-auto mt-5 pt-6">
-        <p className="text-red-500 text-center">© Copyrights <span className="text-white">Mar Sueños</span> {new Date().getFullYear()}.
-          Todos los derechos reservados. <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 underline">Politicas de Privacidad</a> | <a href="#" className="text-white hover:text-red-500 transition-colors duration-300 underline">Terminos de Uso</a>
+        <p className="text-red-500 text-center">© Copyrights <span className="text-blue-700">Mar Sueños</span> {new Date().getFullYear()}.
+          Todos los derechos reservados. <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 underline">Politicas de Privacidad</a> | <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 underline">Terminos de Uso</a>
         </p>
+      </div>
+
+
+      <div className="flex items-center justify-end"> {/* Utilizamos "justify-end" para alinear los elementos a la derecha */}
+        <div className="flex items-center mr-4"> {/* Utilizamos "mr-4" para agregar un poco de espacio entre los elementos */}
+          <img src="/img/colombia.png" alt="Colombia" className="h-4 mr-2" />
+          <span className="mr-1">Colombia</span>
+
+        </div>
+        <a href="/privacy" className="mr-2">
+          Privacidad
+        </a>
+        <a href="/terms">
+          Términos y Condiciones
+        </a>
       </div>
     </footer>
   );
