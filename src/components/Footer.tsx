@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="w-full bg-white text-red-700 py-8  ">
+    <footer className="w-full bg-white text-red-700 py-8">
       {/* Contenedor principal */}
       <div className="container mx-auto flex flex-wrap justify-between space-y-8 md:space-y-0 md:flex-row md:space-x-8">
         <div className="w-full sm:w-1/2 lg:w-auto">
@@ -34,11 +34,23 @@ const Footer: React.FC = () => {
             <p className="pb-2">
               <FaMapMarkerAlt className="inline-block mr-2 text-blue-700" /> Carrera 15A #23 Norte - 50, Armenia - Quindio - Colombia
             </p>
+
+            {/* Columna de Siguenos */}
+            <div className="footer-column mt-8">
+              <div className="flex items-center space-x-8">
+                <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaFacebook size={30} /></a>
+                <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaTwitter size={30} /></a>
+                <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaYoutube size={30} /></a>
+                <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaInstagram size={30} /></a>
+                <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaTripadvisor size={30} /></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="w-full sm:w-1/2 lg:w-auto ">
+
+        <div className="w-full sm:w-1/2 lg:w-auto">
           {/* Columna de Enlaces Útiles */}
-          <div className="footer-column ">
+          <div className="footer-column">
             <h3 className="text-2xl text-black mb-4">Links</h3>
             <ul>
               <li><IoIosAirplane className="inline-block mr-2 text-blue-700 " /><a href="#" className="text-red-700 hover:text-blue-700 transition-colors duration-300">Inicio</a></li>
@@ -50,6 +62,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
+
         <div className="w-full sm:w-1/2 lg:w-auto">
           {/* Columna de Suscripción */}
           <div className="footer-column">
@@ -73,44 +86,28 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="w-full sm:w-1/2 lg:w-auto">
-          {/* Columna de Redes Sociales */}
-          <div className="footer-column">
-            <h3 className="text-2xl text-black mb-4">Siguenos!</h3>
-            <div className="flex items-center space-x-4">
-              <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce" ><FaFacebook size={30} /></a>
-              <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaTwitter size={30} /></a>
-              <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaYoutube size={30} /></a>
-              <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaInstagram size={30} /></a>
-              <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaTripadvisor size={30} /></a>
-            </div>
-          </div>
-        </div>
       </div>
       {/* Contenedor inferior */}
       <div className="container mx-auto mt-auto mt-5 pt-6">
         <p className="text-red-500 text-center">© Copyrights <span className="text-blue-700">Mar Sueños</span> {new Date().getFullYear()}.
-          Todos los derechos reservados. <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 underline">Politicas de Privacidad</a> | <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 underline">Terminos de Uso</a>
+          Todos los derechos reservados.
         </p>
       </div>
 
-
-      <div className="flex items-center justify-end"> {/* Utilizamos "justify-end" para alinear los elementos a la derecha */}
-        <div className="flex items-center mr-4"> {/* Utilizamos "mr-4" para agregar un poco de espacio entre los elementos */}
+      <div className="flex items-center justify-left pl-20">
+        <div className="flex items-center mr-4">
           <img src="/img/colombia.png" alt="Colombia" className="h-4 mr-2" />
           <span className="mr-1">Colombia</span>
-
         </div>
-        <a href="/privacy" className="mr-2">
+        <a href="/privacy" className="mr-2 underline hover:text-blue-500 transition-colors duration-300">
           Privacidad
         </a>
-        <a href="/terms">
+        <a href="/terms" className='underline hover:text-blue-500 transition-colors duration-300'>
           Términos y Condiciones
         </a>
       </div>
     </footer>
   );
 };
+
 export default Footer;
-
-
