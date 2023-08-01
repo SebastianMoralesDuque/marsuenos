@@ -1,10 +1,11 @@
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './Navbar';
-import Home from '../pages/Home';
-import About from '../pages/About';
-import Services from '../pages/Services';
-import Contact from '../pages/Contact';
-import Experiences from '../pages/Experiences';
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./Navbar";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Services from "../pages/Services";
+import Contact from "../pages/Contact";
+import Experiences from "../pages/Experiences";
+import Visas from "../pages/Visas";
 
 const AppRoutes = () => {
   return (
@@ -16,7 +17,8 @@ const AppRoutes = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/experiences" element={<Experiences/>} />
+          <Route path="/experiences" element={<Experiences />} />
+          <Route path="/visas" element={<Visas />} />
         </Routes>
       </div>
     </div>
