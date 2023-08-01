@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
               />
               <button
                 onClick={handleSubscribe}
-                className="bg-red-600 hover:bg-red-700 text-white rounded px-4 py-2 bg-red-500 shadow-lg shadow-red-500/50"
+                className="hover:bg-red-700 text-white rounded px-4 py-2 bg-red-500 shadow-lg shadow-red-500/50"
               >
                 ENVIAR
               </button>
@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       {/* Contenedor inferior */}
-      <div className="container mx-auto mt-auto mt-5 pt-6">
+      <div className="container mx-auto mt-5 pt-6">
         <p className="text-red-500 text-center">© Copyrights <span className="text-blue-700">Mar Sueños</span> {new Date().getFullYear()}.
           Todos los derechos reservados.
         </p>
