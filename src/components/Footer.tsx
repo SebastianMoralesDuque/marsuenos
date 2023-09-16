@@ -17,94 +17,71 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="w-full bg-white text-red-700 py-8">
-      {/* Contenedor principal */}
-      <div className="container mx-auto flex flex-wrap justify-between space-y-8 md:space-y-0 md:flex-row md:space-x-8">
-        <div className="w-full sm:w-1/2 lg:w-auto">
-          {/* Columna de Contacto */}
-          <div className="footer-column">
-            <h3 className="text-2xl text-black mb-4">Contáctenos</h3>
-            <p className="pb-2">
-              <FaPhone className="inline-block mr-2 text-blue-700" /> 123456789
-            </p>
-            <p className="pb-2">
-              <FaEnvelope className="inline-block mr-2 text-blue-700" />
-              ventas@marsuenosviajes.com
-            </p>
-            <p className="pb-2">
-              <FaMapMarkerAlt className="inline-block mr-2 text-blue-700" /> Carrera 15A #23 Norte - 50, Armenia - Quindio - Colombia
-            </p>
-
-            {/* Columna de Siguenos */}
-            <div className="footer-column mt-8">
-              <div className="flex items-center space-x-8">
-                <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaFacebook size={30} /></a>
-                <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaTwitter size={30} /></a>
-                <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaYoutube size={30} /></a>
-                <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaInstagram size={30} /></a>
-                <a href="#" className="text-blue-700 hover:text-red-500 transition-colors duration-300 animate-bounce"><FaTripadvisor size={30} /></a>
-              </div>
-            </div>
-          </div>
+    <footer className="bg-gray-900 text-white py-8">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 className="text-2xl mb-4">Contáctenos</h3>
+          <p className="mb-2">
+            <FaPhone className="inline-block mr-2" /> 123456789
+          </p>
+          <p className="mb-2">
+            <FaEnvelope className="inline-block mr-2" />
+            ventas@marsuenosviajes.com
+          </p>
+          <p>
+            <FaMapMarkerAlt className="inline-block mr-2" /> Carrera 15A #23 Norte - 50, Armenia - Quindio - Colombia
+          </p>
         </div>
 
-        <div className="w-full sm:w-1/2 lg:w-auto">
-          {/* Columna de Enlaces Útiles */}
-          <div className="footer-column">
-            <h3 className="text-2xl text-black mb-4">Links</h3>
-            <ul>
-              <li><IoIosAirplane className="inline-block mr-2 text-blue-700 " /><a href="#" className="text-red-700 hover:text-blue-700 transition-colors duration-300">Inicio</a></li>
-              <li><IoIosAirplane className="inline-block mr-2 text-blue-700" /><a href="#" className="text-red-700 hover:text-blue-800 transition-colors duration-300">Destinos</a></li>
-              <li><IoIosAirplane className="inline-block mr-2 text-blue-700" /><a href="#" className="text-red-700 hover:text-blue-700 transition-colors duration-300">Paquetes</a></li>
-              <li><IoIosAirplane className="inline-block mr-2 text-blue-700" /><a href="#" className="text-red-700 hover:text-blue-800 transition-colors duration-300">Promociones</a></li>
-              <li><IoIosAirplane className="inline-block mr-2 text-blue-700" /><a href="#" className="text-red-700 hover:text-blue-700 transition-colors duration-300">Contacto</a></li>
-              <li><IoIosAirplane className="inline-block mr-2 text-blue-700" /><a href="#" className="text-red-700 hover:text-blue-800 transition-colors duration-300">Visas</a></li>
-            </ul>
-          </div>
+        <div>
+          <h3 className="text-2xl mb-4">Links</h3>
+          <ul>
+            <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="hover:text-red-500">Inicio</a></li>
+            <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="hover:text-red-500">Destinos</a></li>
+            <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="hover:text-red-500">Paquetes</a></li>
+            <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="hover:text-red-500">Promociones</a></li>
+            <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="hover:text-red-500">Contacto</a></li>
+            <li><IoIosAirplane className="inline-block mr-2" /><a href="#" className="hover:text-red-500">Visas</a></li>
+          </ul>
         </div>
 
-        <div className="w-full sm:w-1/2 lg:w-auto">
-          {/* Columna de Suscripción */}
-          <div className="footer-column">
-            <h3 className="text-2xl text-black mb-4">Boletín</h3>
-            <p>Dejanos tu correo para que compartamos experiencias<br></br>
-              de vacaciones y viajes:</p>
-            <div className="flex mt-2 text-red-500">
-              <input
-                type="email"
-                value={email}
-                onChange={handleEmailChange}
-                placeholder="Email"
-                className="border border-gray-300 rounded px-4 py-2 mr-2 w-full"
-              />
-              <button
-                onClick={handleSubscribe}
-                className="hover:bg-red-700 text-white rounded px-4 py-2 bg-red-500 shadow-lg shadow-red-500/50"
-              >
-                ENVIAR
-              </button>
-            </div>
+        <div>
+          <h3 className="text-2xl mb-4">Boletín</h3>
+          <p>Dejanos tu correo para que compartamos experiencias de vacaciones y viajes:</p>
+          <div className="flex mt-2">
+            <input
+              type="email"
+              value={email}
+              onChange={handleEmailChange}
+              placeholder="Email"
+              className="border rounded py-2 px-3 mr-2 w-full"
+            />
+            <button
+              onClick={handleSubscribe}
+              className="bg-red-500 hover:bg-red-600 text-white rounded py-2 px-4"
+            >
+              ENVIAR
+            </button>
           </div>
         </div>
       </div>
-      {/* Contenedor inferior */}
-      <div className="container mx-auto mt-5 pt-6">
-        <p className="text-red-500 text-center">© Copyrights <span className="text-blue-700">Mar Sueños</span> {new Date().getFullYear()}.
-          Todos los derechos reservados.
-        </p>
+
+      <div className="container mx-auto mt-8">
+        <p className="text-center text-gray-400">&copy; {new Date().getFullYear()} Mar Sueños. Todos los derechos reservados.</p>
       </div>
 
-      <div className="flex items-center justify-left pl-20">
-        <div className="flex items-center mr-4">
-          <img src="/img/colombia.png" alt="Colombia" className="h-4 mr-2" />
-          <span className="mr-1">Colombia</span>
+      <div className="container mx-auto mt-4">
+        <div className="flex items-center justify-center">
+          <div className="mr-4">
+            <img src="/img/colombia.png" alt="Colombia" className="h-4" />
+          </div>
+          <a href="/privacy" className="underline hover:text-blue-500 transition-colors duration-300">
+            Privacidad
+          </a>
+          <a href="/terms" className="ml-4 underline hover:text-blue-500 transition-colors duration-300">
+            Términos y Condiciones
+          </a>
         </div>
-        <a href="/privacy" className="mr-2 underline hover:text-blue-500 transition-colors duration-300">
-          Privacidad
-        </a>
-        <a href="/terms" className='underline hover:text-blue-500 transition-colors duration-300'>
-          Términos y Condiciones
-        </a>
       </div>
     </footer>
   );

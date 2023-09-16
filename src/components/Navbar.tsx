@@ -22,8 +22,8 @@ const Navbar = () => {
   return (
     <nav className="bg-white fixed w-full z-20 top-0 left-0 rounded-md mb-8">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link to="/" className="flex items-center">
-          <img src="/img/logo.png" className="h-22 w-48" alt="Flowbite Logo" />
+        <Link to="/home" className="flex items-center ml-10 mt-2">
+          <img src="/img/air.png" className="h-10 w-auto" alt="Flowbite Logo" />
         </Link>
         <div className="flex md:order-2">
           <button
