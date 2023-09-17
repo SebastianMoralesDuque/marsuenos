@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+
+// Importa ServiceCard aquí si no lo has hecho en otro archivo.
+// Importa otros componentes necesarios si los tienes.
+
 const Home: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -46,13 +50,14 @@ const Home: React.FC = () => {
           </Carousel>
           <div className="flex justify-center mt-4">
             {[...Array(3)].map((_, index) => (
-              <button
+              <div
+                role="button"
                 key={index}
                 className={`w-2 h-2 rounded-full ${
                   index === activeIndex ? 'bg-white w-8' : 'bg-white/50 w-4'
                 }`}
                 onClick={() => handleSlideChange(index)}
-              ></button>
+              ></div>
             ))}
           </div>
         </div>
@@ -104,22 +109,20 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, imageSrc 
 
   return (
     <div
-      className={`bg-white rounded-lg shadow-md p-4 ${
-        hovered ? 'bg-blue-200' : ''
-      }`}
+      className={`bg-white rounded-lg shadow-md p-4 ${hovered ? 'bg-blue-200' : ''}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <img
-        src={imageSrc}
+        src={imageSrc || 'URL de imagen de respaldo'}
         alt={title}
         className="w-full h-40 object-cover mb-4 rounded"
       />
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
-      <a href="#" className="text-blue-500 inline-block">
+      {/* <a href="javascript:void(0)" className="text-blue-500 inline-block">
         Leer Más
-      </a>
+      </a> */}
     </div>
   );
 };
