@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react';
 const ContactForm = () => {
   // Define las rutas de las imágenes en un array
   const images = [
-    'https://th.bing.com/th/id/OIP.6439Wipq2jQvMq1PNajKRAHaEK?pid=ImgDet&rs=1',
-    'https://th.bing.com/th/id/OIP.arB1E9VSx3wtQG0LVYg6nAHaDt?pid=ImgDet&rs=1',
-    'https://1.bp.blogspot.com/-uYfujhzoI5c/XrNzT4iPX0I/AAAAAAAAAgw/8WwouvkzQIozPO-7NiKlK4AF7HZKhlFdQCLcBGAsYHQ/s640/IMG_4718-min.jpg'
+    'https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    'https://images.pexels.com/photos/2693529/pexels-photo-2693529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    'https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
   ];
 
   // Estado para mantener el índice de la imagen actual
@@ -40,7 +40,7 @@ const ContactForm = () => {
 
       {/* Sección "Quienes Somos" */}
       <section className="container mx-auto mt-8 bg-gray-100 py-8">
-        <h2 className="font-sans text-3xl italic hover:not-italic text-white bg-gradient-to-r from-cyan-800 to-sky-400 border-2 rounded-md border-rose-300 border-none hover:border-solid">
+        <h2 className="">
           Quienes Somos?
         </h2>
         {/* Resto del contenido sobre Quienes Somos... */}
@@ -68,7 +68,7 @@ const ContactForm = () => {
       </section>
 
       {/* Sección de Equipo MARSUEÑOS Viajes y Turismo */}
-      <h2 className="font-sans text-3xl italic hover:not-italic text-white bg-gradient-to-r from-cyan-800 to-sky-400 border-2 rounded-md border-rose-300 border-none hover:border-solid">
+      <h2 className="">
         Equipo MARSUEÑOS Viajes y Turismo
       </h2>
 

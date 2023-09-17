@@ -22,17 +22,18 @@ const Navbar = () => {
   return (
     <nav className="bg-white fixed w-full z-20 top-0 left-0 rounded-md mb-8">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link to="/home" className="flex items-center ml-10 mt-2">
+        <Link to="/" className="flex items-center ml-10 mt-2">
           <img src="/img/air.png" className="h-10 w-auto" alt="Flowbite Logo" />
         </Link>
+      
         <div className="flex md:order-2">
           <button
-            className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+            className="bg-red-500 hover:bg-red-600 text-white rounded py-2 px-4"
             onClick={openModal}
           >
             Inicia sesión
           </button>
-
+          
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
@@ -151,6 +152,17 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+            {/* Aquí agregamos la sección de búsqueda */}
+  <div className="ml-4">
+    <input
+      type="text"
+      placeholder="Buscar..."
+      className="border rounded px-2 py-1"
+    />
+    <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 ml-2 rounded">
+      Buscar
+    </button>
+  </div>
         </div>
       </div>
 

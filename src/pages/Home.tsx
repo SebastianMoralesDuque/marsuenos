@@ -3,8 +3,6 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 
-// Importa ServiceCard aquí si no lo has hecho en otro archivo.
-// Importa otros componentes necesarios si los tienes.
 
 const Home: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -28,7 +26,7 @@ const Home: React.FC = () => {
           >
             <div>
               <img
-                src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80"
+                src="https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="image 1"
                 className="w-full h-96 object-cover carousel-image"
               />

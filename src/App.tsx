@@ -10,7 +10,7 @@ const App: React.FC = () => {
           <AppRoutes />
         </div>
       </main>
-      <footer className="bg-gray-200">
+      <footer className="bg-blue-500">
         <Footer />
       </footer>
     </div>

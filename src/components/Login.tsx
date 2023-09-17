@@ -185,7 +185,7 @@ const Login: React.FC<LoginProps> = ({ closeModal }) => {
               </div>
               <p className="mt-4 text-center">
                 ¿Ya tienes cuenta?{' '}
-                <button className="text-blue-600" onClick={handleLoginClick}>
+                <button className="bg-red-500 hover:bg-red-600 text-white rounded py-2 px-4" onClick={handleLoginClick}>
                   Inicia Sesión
                 </button>
               </p>
